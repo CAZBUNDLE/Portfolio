@@ -116,9 +116,6 @@ a
 
 
 
-
-}
-
 /*========== HOME ==========*/
 .home__container{
   height: calc(100vh - var(--header-height));

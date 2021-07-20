@@ -11,6 +11,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box; 
+    background-size: cover;
 }
 
 html{
@@ -51,7 +52,7 @@ img{
 }
 
 section{
-  padding: 6rem;
+  padding: 6rem 0;
 }
 
 .section-heaading{
@@ -165,10 +166,10 @@ border-radius:initial;
 
 .menu-toggler{
   position:absolute;
-  top: 5px;
-  right:5px;
-  width: 5px;
-  height: 4px;
+  top: 5rem;
+  right:5rem;
+  width: 5rem;
+  height: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -280,7 +281,8 @@ border-radius:initial;
 
 
 /* ================= Social media Icons================ */
-.social-media{
+.social-media {
+  
   margin-top: 5rem;
 }
 
@@ -501,18 +503,192 @@ transition: background-colour 650ms;
 
 
 input[type="submit"]:hover{
-  
+  color: #221e3f;
+  background-color:#ffe838;
 }
 /* ================================================== */
 
+/* ================ footer ========================= */
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  background-color: #16162d;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.up{
+  position: absolute;
+  width:5rem;
+  height:5rem;
+  background-color: #eee;
+  top: -2.5rem;
+  right:5rem;
+  border-radius: 100%;
+  display:flex;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+  
+}
+
+.up i{
+  color:#16162d;
+  font-size:2rem;
+  margin:auto;
+}
+
+.copyright p {
+  font-size:1.4rem;
+}
+/* ================================================== */
+
+/* ================= Animation ====================== */
+@keyframes pulse{
+  0%{
+      box-shadow: 0 0 0 0 rgb(253,87,191,0.99);
+  }
+
+  70%{
+    box-shadow: 0 0 0 2rem rgb(253,87,191,0);
+  }
+
+  100%{
+    box-shadow: 0 0 0 0 rgb(253,87,191,0);
+  }
+}
+
+/* ================================================== */
+
+
+/* =====================Rponsive ==================== */
+
+@media screen and (max-width: 768px){
+ body{
+    background: url('/images/sitebg2.jpg')no-repeat center fixed; 
+    background-size: cover;
+  }
+
+  .landing-text h1{
+    font-size: 15rem;
+  }
+
+  .landing-text h6{
+    font-size:1.7rem;
+  }
+
+  .nav-list{
+
+    flex-direction: column;
+  }
+
+  li{
+    margin: 2rem,0;
+  }
+
+  .nav-link{
+    font-size: 4.5rem;
+  }
+  .about-heading h1{
+    font-size:8rem;
+  }
+
+  .section-heading h1{
+    font-size:3rem;
+  }
+
+  .about-details li{
+    margin:0 2rem;
+  }
+
+  .icon-container {
+    width:7rem;
+    height: 7rem;
+  }
+
+  .icon-container i{
+      font-size: 4rem;
+  }
+
+  .timeline ul{
+    margin: 0 0 0 auto;
+  }
+
+  .timeline .date::before{
+    left:-20rem;
+  }
+
+  .timeline .date::before{
+    left:-5.9rem;
+  }
+}
+
+@media screen and(max-width){
+  .menu-toggler{
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .landing-text h1{
+    font-size: 8rem ;
+  }
+  .landing-text h6{
+    font-size: 1.4rem ;
+  }
+
+  .nav-link{
+    font-size: 3.5rem;
+  }
+
+  .about .container{
+    flex-direction: column;
+  }
+  .profile-img{
+    margin: 0 0 7rem 0;
+  }
+
+  .portfolio-item{
+    flex-direction: column;
+  }
+
+  .portfolio-img{
+    margin:0 0 2rem 0;
+    order: 1;
+  }
+
+  .portfolio-description{
+    margin: 0;
+    order: 2;
+  }
+
+  .timeline p{
+    font-size: 1.4rem;
+  }
+
+  .timeline .date::before{
+    font-size: 1.4rem;
+  }
+
+  form{
+    width: 100%;
+  }
+  
+  .up{
+    right:2rem;
+  }
+
+}
+
+
+
+
+ 
 
 
 
 
 
-
-
-
+/* ================================================== */
 
 
 
@@ -539,11 +715,7 @@ input[type="submit"]:hover{
   color: white;
 }
 
-.fa fa-git{
-  .fa-instagram {
-    background: #125688;
-    color: white; */
-}
+
 
 
 

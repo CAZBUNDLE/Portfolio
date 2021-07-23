@@ -1,7 +1,7 @@
 // ==========Testing if JQ is activted=============
 
 // $( document ).ready(function() {
-//    // alert('Hello World');
+//  alert('Hello World');
 // });
 
 // function alertCaz(){
@@ -13,7 +13,7 @@
 $(document).ready(function(){
 
     // ==========drop down ===========
-    $('.menu-toggler').on('click', function(){
+    $('this').on('click', function(){
         $(".menu-toggler").togglerClass('open');
         $('.top-nav').togglerClass('open');
     });

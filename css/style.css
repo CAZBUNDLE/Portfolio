@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
-
+ 
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 /*=================================================*/
 
  /* ================== heading ==================== */
@@ -10,8 +11,9 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box; 
+    box-sizing:border-box;
     background-size: cover;
+    font-size: 6;
 }
 
 html{
@@ -49,6 +51,8 @@ img{
   height: 100%;
   margin: 0 auto;
   position: relative;
+  
+
 }
 
 section{
@@ -61,7 +65,7 @@ section{
 }
 
 .section-heaading h1{
-  font-size: 3.5rem;
+  font-size: .5rem;
   color: rgb(255,255,255);;
   text-transform: uppercase;
   font-weight: 300;
@@ -90,7 +94,7 @@ section{
   bottom:-1rem;
 }
 
-.section-heaading h6{
+.section-heaading h3{
   font-size: 1.6rem;
   font-weight: 300
 }
@@ -230,7 +234,7 @@ border-radius:initial;
 
 .landing-text h1{
   font-size: 20rem;
-  font-family:  'DM Serif Display', serif;;
+  font-family:  'Shrikhand, cursive;', serif;
   background-image: linear-gradient(45deg, #d11fc2, #b2cf0d);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -239,7 +243,7 @@ border-radius:initial;
   user-select: none;  
 }
 
-.landing-text h6{
+.landing-text h3{
   font-size: 2rem;
   font-weight: 300;
 } 
@@ -264,7 +268,7 @@ border-radius:initial;
   opacity: .3;
 
 }
-.about-heading h6{
+.about-heading h3{
   font-size: 2rem ;
   font-weight: 300;
 
@@ -379,7 +383,7 @@ my-skills{
 
 }
 
-.portfolio-description h6{
+.portfolio-description h3{
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -402,9 +406,9 @@ my-skills{
 
  
 
-/* =====================Time-Line====================== */
+/* =====================contact====================== */
 
-.timeline ul{
+.contact ul{
   border-left: 4px solid #ffe838;
   border-radius: .8rem;
   background-color: rgba(0.0.0.0.05);
@@ -413,98 +417,19 @@ my-skills{
   padding: 5rem;
   list-style: none;
   text-align: left;
-  width: 70%;
+  width: 50%;
 }
 
-.timeline h1{
+.contact h1{
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 1rem;
   opacity: .3;
-}
-
-.timeline .date{
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding-bottom: 1rem;
   position:relative
-}
-
-.timeline .data:last-of-type{
-  padding-bottom:0;
-  margin-bottom:0;
-  border:none;
-}
-
-.timeline .date::before,
-.timeline .date::after{
-  position: absolute;
-  display:block;
-  top:50%;
-  transform:rotateY(-50%);
-}
-
-.timeline .date::before{
-  content: attr(data-date);
-  left:-21rem;
-  text-align:right;
-  min-width:12rem;
-  font-size: 1.5rem;
-}
-
-.timeline .date::after{
-  content: ' ';
-  box-shadow: 0 0 0 4px #fd57bf;
-  border-radius: 100%;
-  left: 8rem;
-  height:1.5rem;
-  width:1.5rem;
-  background-color: #313534;
-}
-
-/* ================================================== */
-
-/* =======================contact===================== */
-
-.contact{
-  background-color: #221e3f;
-}
-
-
-form{
-  width:70%;
-  margin:0 auto;
-}
-
-form label{
-  font-size:1.5rem;
-}
-
-input,
-select,
-textarea{
-  width:100%;
-  padding:1rem;
-  margin-bottom:5px;
-  border:none;
-  outline-color: #fd57bf;
-}
-
-input[type="submit"]{
-width:initial;
-background-color: #fd57bf;
-color: #eee;
-padding:1rem, 2rem;
-border-radius: .8rem;
-cursor: pointer;
-transition: background-colour 650ms;
-}
-
-
-input[type="submit"]:hover{
-  color: #221e3f;
-  background-color:#ffe838;
 }
 /* ================================================== */
 
@@ -561,7 +486,7 @@ input[type="submit"]:hover{
 /* ================================================== */
 
 
-/* =====================Rponsive ==================== */
+/* =====================Rsponsive ==================== */
 
 @media screen and (max-width: 768px){
  body{
@@ -679,15 +604,6 @@ input[type="submit"]:hover{
 
 }
 
-
-
-
- 
-
-
-
-
-
 /* ================================================== */
 
 
@@ -695,25 +611,6 @@ input[type="submit"]:hover{
 
 
 
-/* .fa {
-  padding: 20px;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 
 
 
@@ -721,142 +618,5 @@ input[type="submit"]:hover{
 
 
 
-
-
-
-
-
-
-
-
-/* ===== VARIABLES CSS =====
-:root {
-  --header-height: 3rem;
-
-  *========== Colors ==========*
-  --first-color: rgb(83, 143, 255);
-  --first-color-alt: #048654;
-  --title-color: white;
-  --text-color: white;
-  --text-color-light: rgb(180, 180, 180);
-  --body-color: rgb(234, 81, 90);
-  --container-color:black;
-
-  /*========== Font and typography ==========*
-  --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 2.25rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-  *========== Font weight ==========*
-  --font-medium: 500;
-  --font-semi-bold: 600;
-
-  *========== Margenes ==========*
-  --mb-1: .5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-
-  *========== z index ==========*
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}
-
-@media screen and (min-width: 768px){
-  :root{
-    --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
-}
-
-*========== BASE ==========*
-*,::before,::after{
-  box-sizing: border-box;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
-*========== Variables Dark theme ==========*
-body.dark-theme{
-  --title-color: #F1F3F2;
-  --text-color: #C7D1CC;
-  --body-color: #1D2521;
-  --container-color: #27302C;
-}
-
-*========== Button Dark/Light ==========*
-.change-theme{
-  position: absolute;
-  right: 1rem;
-  top: 1.8rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-body{
-  margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-h1,h2,h3,p,ul{
-  margin: 0;
-}
-
-ul{
-  padding: 0;
-  list-style: none;
-}
-
-a
-
-*========== LAYOUT ==========*
-.bd-container{
-  max-width: 960px;
-  width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
-}
-
-.bd-grid{
-  display: grid;
-  gap: 1.5rem;
-}
-
-
-
-*========== HOME ==========*
-.home__container{
-  height: calc(100vh - var(--header-height));
-  align-content: center;
-}
-
-
-
-.hello {
-    color:#ea5e66;
-    font-family: 'DM Serif Display', serif;
-    font-size:400px;
-    margin-left: 20%;
-
-
-} */
 
 

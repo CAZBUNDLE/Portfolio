@@ -19,8 +19,8 @@
 html{
   
     font-size:  10px;
-    font-family:  sans-serif  ;
-    color: rgba(238, 238, 238, 0.726);
+    font-family:'sans-serif';
+    color:rgba(238, 238, 238, 0.726);
     
 }
 
@@ -28,7 +28,7 @@ body{
     width: 100%;
     height: 100%;
    background: url('/images/sitebg2.jpg')no-repeat center fixed; 
-   
+   background-size: cover;
 }
 
 a{
@@ -42,7 +42,8 @@ p{
     font-weight: 300;
 }
 img{
-  width: 30%;
+
+  width: 100%;
 }
 
 .container{
@@ -62,11 +63,12 @@ section{
 .section-heaading{
   text-align: center;
  margin-bottom: 10rem;
+ 
 }
 
 .section-heaading h1{
-  font-size: .5rem;
-  color: rgb(255,255,255);;
+  font-size: 3.5rem;
+  color: rgb(255,255,255, .3);;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
@@ -96,12 +98,17 @@ section{
 
 .section-heaading h3{
   font-size: 1.6rem;
-  font-weight: 300
+  font-weight: 300;
 }
 
 .has-margin-right{
   margin-right: 5rem;
 }
+
+.has-margin-left{
+  margin-right: 5rem;
+}
+
 
 header{
   width: 100%;
@@ -114,8 +121,8 @@ header{
   /* ==================== navigation links =================== */
 .top-nav{
   width: 100%;
-  height: 10vh;
-  position: fixed;
+  height: 100vh;
+  position:fixed;
   top: -100vh;  
   z-index: 50;
   background-color:rgb(14, 22, 71);
@@ -147,22 +154,21 @@ li{
 }
 
 .nav-link:hover,
-
 .nav-link:focus{
   background-image: linear-gradient(45deg, #d11fc2, #b2cf0d);
-    background-size: 100%;
-   -webkit-background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
    
 }
 
-.top-nav.open{
+.top-nav .open{
 top:0;
 border-radius:initial;
 }
 
 
-  /* ====================================================== */
+/* ====================================================== */
 
 
 
@@ -183,7 +189,7 @@ border-radius:initial;
 }
 
 
-.menu-toggler.open{
+.menu-toggler .open{
   transform: rotate(-45deg);
 }
    
@@ -204,19 +210,19 @@ border-radius:initial;
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
-.open.bar.start{
-  transform: rotate(-450)translateX(.8rem);
+.open .bar .start{
+  transform: rotate(-450deg)translateX(.8rem);
 }
 
 .bar.end{
   align-self: flex-end;
   transform-origin: left;
-   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57); 
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57); 
   
 }
 
 .open.bar.end{
-  transform: rotate(-450)translateX(-.8rem);
+  transform: rotate(-450deg)translateX(-.8rem);
 }
 
 /* ================================================================= */
@@ -225,7 +231,7 @@ border-radius:initial;
   position: absolute; 
   top:50%;
   left:50%;
-  transform:translate(-50%, -50%) ;
+  transform:translate(-50%, -50%);
   width: 100%;
   text-align: center;
   z-index: 1;
@@ -234,7 +240,7 @@ border-radius:initial;
 
 .landing-text h1{
   font-size: 20rem;
-  font-family:  'Shrikhand, cursive;', serif;
+  font-family:  'DM Serif Display', serif;
   background-image: linear-gradient(45deg, #d11fc2, #b2cf0d);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -244,8 +250,8 @@ border-radius:initial;
 }
 
 .landing-text h3{
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 3rem;
+  font-weight: 400;
 } 
 
 .about .container {
@@ -256,6 +262,7 @@ border-radius:initial;
 }
 
 .about-heading{
+  font-size: 10rem;
   text-align: center;
   text-transform: uppercase;
   line-height: 0;
@@ -279,7 +286,8 @@ border-radius:initial;
 
 .profile-img  {
   flex: 1;
-  margin-left:10rem;
+  margin-right:5rem;
+  
 }
 
 
@@ -295,19 +303,11 @@ border-radius:initial;
   transition: color 650ms;
 }
 
-.fa-instagram-square :hover{
-
-  color:red;
-}
-.fa-git-square :hover{
-
-  color:red;
+a:hover{
+  color: #fd57bf;
 }
 
-.fa-linkedin-square :hover{
-  
-   color:red;
-}
+
 
 
 /* ========================================================== */
@@ -335,6 +335,7 @@ my-skills{
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 2rem -2px 2rem 0,
+  
 }
 
 .icon-container {
@@ -344,14 +345,16 @@ my-skills{
   background-color: #fd57bf;
   margin-bottom: 2rem;
   display: flex;
-  transform:rotate (45deg);
+  transform: rotate(45deg);
+
 }
 
 .icon-container i{
   color: #ffe838;
   font-size:5rem;
   margin: auto;
-  transform:rotate(-45deg)
+  transform: rotate(-45deg);
+  
 }
 
 /* ===================================================== */
@@ -369,22 +372,25 @@ my-skills{
   margin-bottom: 0;
 }
 
-.profile-img{
+.portfolio-img{
   flex:1;
+  width: 30rem;
+
 }
 
 .portfolio-description{
   flex:1;
 }
+
 .portfolio-description h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
   margin: 1rem 0;
 
 }
 
 .portfolio-description h3{
-  font-size: 1.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 300;
   opacity: 0.3;
@@ -394,20 +400,22 @@ my-skills{
 .portfolio-description .cta{
   display: inline-block;
   margin-top: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #3883ff;
   transition: color 650ms;
 }
 
-.portfolio-description .cta:hover{
-  color:#2f67cd
-}
+.portfolio-description .cta :hover{
+  color:#fd57bf}
 
  
 
 /* =====================contact====================== */
 
+.resume{
+  cursor: pointer;
+}
 .contact ul{
   border-left: 4px solid #ffe838;
   border-radius: .8rem;

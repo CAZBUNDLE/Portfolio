@@ -13,8 +13,8 @@
 $(document).ready(function(){
 
     // ==========drop down ===========
-    $('this').on('click', function(){
-        $(".menu-toggler").togglerClass('open');
+    $(".menu-toggler").on('click', function(){
+        $(this).togglerClass('open');
         $('.top-nav').togglerClass('open');
     });
 
@@ -43,7 +43,7 @@ $(document).ready(function(){
         duration:1800
     })
         
-});
+}); 
 
 
 
